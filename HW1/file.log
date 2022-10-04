@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  4 OCT 2022 00:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  4 OCT 2022 01:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -313,20 +313,20 @@ File: r.png Graphic file (type png)
 <use r.png>
 Package pdftex.def Info: r.png  used on input line 19.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [4 <./s.png> <./r.png>] [5] [6] (./file.aux) ) 
+ [4 <./s.png> <./r.png>] [5] [6] [7] (./file.aux) ) 
 Here is how much of TeX's memory you used:
  6839 strings out of 475075
  107561 string characters out of 5783001
- 441301 words of memory out of 5000000
+ 443301 words of memory out of 5000000
  28169 multiletter control sequences out of 15000+600000
  477715 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,7n,82p,370b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on file.pdf (6 pages, 129736 bytes).
+Output written on file.pdf (7 pages, 132246 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
