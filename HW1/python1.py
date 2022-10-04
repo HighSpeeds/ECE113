@@ -51,3 +51,10 @@ plot(s,range(-10,5),"s[n]=y[n+4]-w[n-3]","s.png")
 
 r=lambda n: 3.9*w(n)
 plot(r,range(-10,5),"r[n]=3.9w[n]","r.png")
+
+
+for i in [0.3,0.48,0.45,0.525,0.7,0.75]:
+    n=1
+    while 2/i*n-int(2/i*n)>=0:
+        n+=1
+    print(f"n={n} for i={i}")
