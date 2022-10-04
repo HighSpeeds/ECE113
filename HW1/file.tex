@@ -63,8 +63,16 @@ The period of $\sin(0.15\pi n+0.75\pi)$ is $10$ and the period of
 If $N$ is an integer then the signal is periodic, since $(-1)^{n+N}=(-1)^{n}$
 if $N$ is even, and $(-1)^{n+2N}=(-1)^{n}$ if $N$ is odd. But if 
 $N$ is not an integer, then the signal is not periodic.
-
-
+\section*{Problem 5}
+With the following matlab code:
+\lstinputlisting[
+    basicstyle=\tiny, %or \small or \footnotesize etc.
+]{problem5.m}
+We get the following plots\\
+\includegraphics[scale=0.2]{f_03.png}\\
+\includegraphics[scale=0.2]{f_07.png}\\
+\includegraphics[scale=0.2]{f_013.png}\\
+As one can see, we can reconstruct the original conitnous time function from the first sample, since the sampling rate is greater than the nyquist sampling frequency, but not for the other two, since the sampling frequncy is less than the nyquist sampling frequency.
 
 
 
