@@ -30,7 +30,7 @@ def plot(func, range, title,save_name=""):
     plt.xlabel("n")
     plt.ylabel(f"{title[0]}[n]")
     plt.savefig(save_name)
-
+    print(f"{title[0]}[n] = {ydot}")
 c=lambda n: x(n+3)
 plot(c,range(-10,5),"c[n]=x[n+3]","c.png")
 
