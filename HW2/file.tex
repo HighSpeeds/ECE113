@@ -91,6 +91,76 @@ $$y_3[n]=\ln(|x[n-k-1]|+1)=y[n-k]$$
 The system is casual since it only depends on the input values at index $n$.\\\\
 The system is BIBO stable, since given an input $x[n]\leq B<\infty$ for all $n$, we have that
 $$|y[n]|=|\ln(|x[n-1]|+1)|\leq |\ln(|B|+1)|<\infty$$
+The system is relaxed since given an input that goes to $0$ as $n\to\infty$, the output
+also goes to $\ln(1)=0$.
+\subsection*{(b)}
+The system is linear, let 
+$x_1[n]$ corresponds to the output $y_1$, and $x_2[n]$ corresponds to the output $y_2$, then we have that, 
+the output $y'[n]$ corresponding to the input $x_1[n]+x_2[n]$ is
+$$y'[n]=y'[n-1]+x[n]$$
+$$y'[n]=y'[-1]+\sum_{n=0}^{n}x_1[n]+x_2[n]$$
+$$y'[n]=\sum_{k=0}^{n}x_1[k]+\sum_{k=0}^{n}x_1[k]$$
+which is equal to $y_1[n]+y_2[n]$\\\\
+The system is time variant, let $x[n-k]$ corresponds to the output $y_3[n]$, then we have that
+\begin{align*}
+    y_3[n]&=y_3[n-1]+x[n-k]\\
+    &=\sum_{m=0}^{n}x[m-k]\\
+    &=\sum_{m-=k}^{n-k}x[m]
+\end{align*}
+This is diffrent from 
+\begin{align*}
+    y[n-k]&=y[n-k-1]+x[n-k]\\
+    &=\sum_{m=0}^{n-k}x[m]
+\end{align*}
+Therefore the system is time variant.\\\\
+The system is casual since it only depends on the input values at index $n$.\\\\
+The system is not BIBO stable, since given an input $x[n]\leq B<\infty$ for all $n$, we have that
+$$|y[n]|=|y[n-1]+x[n]|\leq \sum_{m=0}^{n}B =nB$$
+This goes to $\infty$ as $n\to\infty$ so the system is not BIBO stable.\\\\
+The system is not relaxed since it accumulates the input values over all indexs $0\leq n$ so
+the output will not go to $0$ as the input goes to $0$ as $n\to\infty$.
+\subsection*{(c)}
+The system is non linear, let 
+$x_1[n]$ corresponds to the output $y_1$, and $x_2[n]$ corresponds to the output $y_2$, then we have that, 
+the output $y'[n]$ corresponding to the input $x_1[n]+x_2[n]$ is
+$$y'[n]=y'[n-1]+x[n]$$
+$$y'[n]=y'[-1]+\sum_{n=0}^{n}x_1[n]+x_2[n]$$
+$$y'[n]=1+\sum_{k=0}^{n}x_1[k]+\sum_{k=0}^{n}x_1[k]$$
+which is not equal to $y_1[n]+y_2[n]=2+\sum_{k=0}^{n}x_1[k]+\sum_{k=0}^{n}x_1[k]$\\\\
+The system is time variant, let $x[n-k]$ corresponds to the output $y_3[n]$, then we have that
+\begin{align*}
+    y_3[n]&=y_3[n-1]+x[n-k]\\
+    &=1+\sum_{m=0}^{n}x[m-k]\\
+    &=1+\sum_{m-=k}^{n-k}x[m]
+\end{align*}
+This is diffrent from 
+\begin{align*}
+    y[n-k]&=y[n-k-1]+x[n-k]\\
+    &=1+\sum_{m=0}^{n-k}x[m]
+\end{align*}
+Therefore the system is time variant.\\\\
+The system is casual since it only depends on the input values at index $n$.\\\\
+The system is not BIBO stable, since given an input $x[n]\leq B<\infty$ for all $n$, we have that
+$$|y[n]|=|y[n-1]+x[n]|\leq 1+\sum_{m=0}^{n}B =nB$$
+This goes to $\infty$ as $n\to\infty$ so the system is not BIBO stable.\\\\
+The system is not relaxed since it accumulates the input values over all indexs $0\leq n$ so
+the output will not go to $0$ as the input goes to $0$ as $n\to\infty$.
+\subsection*{(d)}
+The system is non linear, let 
+$x_1[n]$ corresponds to the output $y_1$, and $x_2[n]$ corresponds to the output $y_2$, then we have that, 
+the output $y'[n]$ corresponding to the input $x_1[n]+x_2[n]$ is
+$$y'[n]=2+x_1[n]+x_2[n]$$
+which is not equal to $y_1[n]+y_2[n]=4+x_1[n]+x_2[n]$\\\\
 
-
+The system is time invariant, let $x[n-k]$ corresponds to the output $y_3[n]$, then we have that
+\begin{align*}
+    y_3[n]&=2+x[n-k]
+\end{align*}
+Therefore the system is time invariant since $y[n-k]=2+x[n-k]$.\\\\
+The system is casual since it only depends on the input values at index $n$.\\\\
+The system is BIBO stable, since given an input $x[n]\leq B<\infty$ for all $n$, we have that
+$$|y[n]|=|2+x[n]|\leq 2+B < \infty$$
+The system is relaxed since given an input that goes to $0$ as $n\to\infty$, the output
+also goes to $0$ since it only depends on the input at index $n$.
+\section*{Problem 5}
 \end{document}
