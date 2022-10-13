@@ -16,5 +16,68 @@ $$x_{2_{even}}[n]=\frac{\alpha^nu[n-1]+n\alpha^{-n}u[-(n+1)]}{2}$$
 \subsection*{(d)}
 $$x_{4_{even}}[n]=x_4[n]=\alpha^{|n|}$$
 $$x_{4_{odd}}[n]=0$$
+\section*{Problem 2}
+\subsection*{(a)}
+False, for instance, $x_n[n]=\cos(\pi n)$ is a power signal since it has a bounded 
+power of $p(x)=\frac{1}{2}\sum_{n=0}^1|\cos(\pi n)|^2=1$. while the energy is 
+$\sum_{n=-\infty}^\infty|\cos(\pi n)|^2=\infty$.
+\subsection*{(b)}
+True, for an energy sequence we have that $\sum_{n=-\infty}^\infty|x_n[n]|^2=e_x<\infty$,
+therefore for the power of the signal we have in general
+$$P_x=\lim_{N\rightarrow\infty}\frac{1}{2N+1}\sum_{n=-N}^N|x_n[n]|^2$$
+therefore
+\begin{align*}
+    P_x&=\lim_{N\rightarrow\infty}\frac{1}{2N+1}e_x\\
+    &=e_x\lim_{N\rightarrow\infty}\frac{1}{2N+1}\\
+    &=0
+\end{align*}
+\subsection*{(c)}
+True, first we start by proving that the energy of a signal $x[n-1]$ is the 
+same as the energy of $x[n]$, $e_x$. We have that the energy of $x[n-1]$, $e_{x-1}$ is 
+$$e_{x-1}=\sum_{n=-\infty}^\infty|x[n-1]|^2$$
+Letting k=n-1 we have that
+\begin{align*}
+    \sum_{n=-\infty}^\infty|x[n-1]|^2&=\sum_{k=-\infty-1}^{\infty+1}|x[k]|^2\\
+    &=\sum_{k=-\infty}^{\infty}|x[k]|^2\\
+    &=e_x
+\end{align*}
+therefore we have that 
+\begin{align*}
+e_x-e_{x-1}&=\sum_{n=-\infty}^\infty|x[n]|^2-\sum_{k=-\infty-1}^{\infty+1}|x[k]|^2\\
+e_x-e_x&=|x[-\infty]|^2+|x[\infty]|^2\\
+0&=|x[-\infty]|^2+|x[\infty]|^2
+\end{align*}
+Since $|x[-\infty]|^2\geq0$ and $|x[\infty]|^2\geq0$ we have that $x[n]=0$ as $n\to \infty$
+\subsection*{(d)}
+True, let $x[n]=\sqrt{|n|}$, then we have that the power of the signal $P_x$ is 
+\begin{align*}
+    P_x&=\lim_{N\rightarrow\infty}\frac{1}{2N+1}\sum_{n=-N}^N|x_n[n]|^2\\
+    &=\lim_{N\rightarrow\infty}\frac{1}{2N+1}\sum_{n=-N}^N\left(\sqrt{|n|}\right)^2\\
+    &=\lim_{N\rightarrow\infty}\frac{1}{2N+1}\sum_{n=-N}^N|n|\\
+    &=\lim_{N\rightarrow\infty}\frac{1}{2N+1}\left(1+2\sum_{n=1}^Nn\right)\\
+    &=\lim_{N\rightarrow\infty}\frac{1}{2N+1}\left(1+2\frac{N(N+1)}{2}\right)\\
+    &=\lim_{N\rightarrow\infty}\frac{N(N+1)+1}{2N+1}\\
+    &=\infty
+\end{align*}
+\section*{Problem 3}
+For System 1 let $x[n]\leq B <\infty$ for all $n$, we have
+$$y[n]=\log(|x[n-1]|)$$
+since $x[n-1]\leq B$ for all $n$ and since $\log(x)$ is an convex function
+$$y[n]=\log(|x[n-1]|)\leq \log(B)<\infty$$
+Therefore System I is BIBO stable. To test for time invariant, let 
+the input $x[n-k]$ corresponds to the output $y_1$, then we have that
+$$y_1[n]=\log(|x[(n-1)-k]|)=y[n-k]$$
+therefore System I is time invariant.\\\\
+For System II let $x[n]\leq B <\infty$ for all $n$, we have
+$$y[n]=e^{x[2n]}$$
+since $x[n]\leq B$ for all $n$ and since $e^x$ is an convex function, we have
+$$y[n]=e^{x[2n]}\leq e^B<\infty$$
+Therefore System II is BIBO stable. To test for time invariant, let
+the input $x[n-k]$ corresponds to the output $y_2$, then we have that
+$$y_2[n]=e^{x[2n-k]}$$
+this is not equal to 
+$$y[n-k]=e^{x[2(n-k)]}$$
+therefore System II is time variant.\\\\
+Thus we have that statement (a) is correct.
 
 \end{document}
