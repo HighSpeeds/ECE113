@@ -62,16 +62,16 @@ True, let $x[n]=\sqrt{|n|}$, then we have that the power of the signal $P_x$ is
 \section*{Problem 3}
 For System 1 let $x[n]\leq B <\infty$ for all $n$, we have
 $$y[n]=\log(|x[n-1]|)$$
-since $x[n-1]\leq B$ for all $n$ and since $\log(x)$ is an convex function
-$$y[n]=\log(|x[n-1]|)\leq \log(B)<\infty$$
+since $|x[n-1]|\leq B$ for all $n$ and since $\log(x)$ is an convex function
+$$|y[n]|=|\log(|x[n-1]|)|\leq |\log(B)|<\infty$$
 Therefore System I is BIBO stable. To test for time invariant, let 
 the input $x[n-k]$ corresponds to the output $y_1$, then we have that
 $$y_1[n]=\log(|x[(n-1)-k]|)=y[n-k]$$
 therefore System I is time invariant.\\\\
-For System II let $x[n]\leq B <\infty$ for all $n$, we have
+For System II let $|x[n]|\leq B <\infty$ for all $n$, we have
 $$y[n]=e^{x[2n]}$$
 since $x[n]\leq B$ for all $n$ and since $e^x$ is an convex function, we have
-$$y[n]=e^{x[2n]}\leq e^B<\infty$$
+$$|y[n]|=e^{x[2n]}\leq e^B<\infty$$
 Therefore System II is BIBO stable. To test for time invariant, let
 the input $x[n-k]$ corresponds to the output $y_2$, then we have that
 $$y_2[n]=e^{x[2n-k]}$$
@@ -79,5 +79,18 @@ this is not equal to
 $$y[n-k]=e^{x[2(n-k)]}$$
 therefore System II is time variant.\\\\
 Thus we have that statement (a) is correct.
+\section*{Problem 4}
+\subsection*{(a)}
+The system is not linear, let 
+$x_1[n]$ corresponds to the output $y_1$, and $x_2[n]$ corresponds to the output $y_2$, then we have that, 
+the output $y'[n]$ corresponding to the input $x_1[n]+x_2[n]$ is
+$$y'[n]=\ln(|x_1[n-1]+x_2[n-1]|+1)$$
+which is not equal to $y_1[n]+y_2[n]$\\\\
+The system is time invariant, let $x[n-k]$ corresponds to the output $y_3[n]$, then we have that
+$$y_3[n]=\ln(|x[n-k-1]|+1)=y[n-k]$$
+The system is casual since it only depends on the input values at index $n$.\\\\
+The system is BIBO stable, since given an input $x[n]\leq B<\infty$ for all $n$, we have that
+$$|y[n]|=|\ln(|x[n-1]|+1)|\leq |\ln(|B|+1)|<\infty$$
+
 
 \end{document}
