@@ -163,4 +163,57 @@ $$|y[n]|=|2+x[n]|\leq 2+B < \infty$$
 The system is relaxed since given an input that goes to $0$ as $n\to\infty$, the output
 also goes to $0$ since it only depends on the input at index $n$.
 \section*{Problem 5}
+\subsection*{(a)}
+A system is stable if and only if the sum of the input response is stable
+ie that 
+$$S=\sum_{k=-\infty}^{\infty}|h[n]|$$
+is finite.\\\\
+We have
+\begin{align*}
+    S&=\sum_{k=-\infty}^{\infty}|h[n]|\\
+    &=\sum{k=-\infty}^{-1}\left|a^k\right|\\
+    &=\sum_{k=-\infty}^{-1}|a|^k\\
+    &=\sum_{k=0}^{\infty}|a|^{-k}\\
+\end{align*}
+This is a geometric series, so if $|a|<1$ then the sum is finite, and if $|a|>1$ then the sum is infinite. Therefore
+the condition for stability is that $\boxed{|a|<1}$.\\\\
+\subsection*{(b)}
+We have that
+\begin{align*}
+    S&=\sum_{k=-\infty}^{\infty}|h[n]|\\
+    &=\sum_{k=0}^{99}\left|a^k\right|\\
+    &=\sum_{k=0}^{99}|a|^k\\
+    &=\begin{cases}
+        \frac{1-|a|^k}{1-|a|} & |a|\neq1\\
+        k & |a|=1
+    \end{cases}
+\end{align*}
+Therefore this system is stable for $\boxed{\text{any }a}$.
+\subsection*{(c)}
+We have that
+\begin{align*}
+    S&=\sum_{k=-\infty}^{\infty}|h[n]|\\
+    &=\sum_{k=0}^{\infty}\left|r^n\sin[n\omega_0]\right|\\
+    &=\sum_{i=0}^{\frac{2\pi}{\omega_0}-1}\sum_{k=0}^{\infty}|r|^{k+i}\left|\sin[i\omega_0]\right|\\
+    &=\sum_{i=0}^{\frac{2\pi}{\omega_0}-1}\left|r^{i}\sin[i\omega_0]\right|\sum_{k=0}^{\infty}|r|^{k}
+\end{align*}
+Therefore the system is stable if either the geometric series converges, so $\boxed{|r|<1}$, or 
+if $\sin[n\omega_0]=0$ for all $n$, so if $\boxed{\omega_0=0}$
+\subsection*{(d)}
+We have that
+\begin{align*}
+    S&=\sum_{k=-\infty}^{\infty}|h[n]|\\
+    &=\left(2\sum_{k=0}^{\infty}\left|r^n\right|\right)-1\\
+    &=\left(2\sum_{k=0}^{\infty}|r|^{k}\right)-1\\
+\end{align*}
+Therefore the system will be stable if $\boxed{a<1}$
+\subsection*{(e)}
+We have that 
+\begin{align*}
+    S&=\sum_{k=-\infty}^{\infty}|h[n]|\\
+    &=\sum_{k=0}^{\infty}\left|K(-1)^n\right|\\
+    &=|K|\sum_{k=0}^{\infty}\left|(-1)^n\right|\\
+    &=|K|\sum_{k=0}^{\infty}1
+\end{align*}
+Therefore the system will be stable if $\boxed{K=0}$
 \end{document}
