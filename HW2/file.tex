@@ -49,7 +49,7 @@ e_x-e_x&=|x[-\infty]|^2+|x[\infty]|^2\\
 \end{align*}
 Since $|x[-\infty]|^2\geq0$ and $|x[\infty]|^2\geq0$ we have that $x[n]=0$ as $n\to \infty$
 \subsection*{(d)}
-True, let $x[n]=\sqrt{|n|}$, then we have that the power of the signal $P_x$ is 
+False, let $x[n]=\sqrt{|n|}$, then we have that the power of the signal $P_x$ is 
 \begin{align*}
     P_x&=\lim_{N\rightarrow\infty}\frac{1}{2N+1}\sum_{n=-N}^N|x_n[n]|^2\\
     &=\lim_{N\rightarrow\infty}\frac{1}{2N+1}\sum_{n=-N}^N\left(\sqrt{|n|}\right)^2\\
@@ -83,9 +83,9 @@ Thus we have that statement (a) is correct.
 \subsection*{(a)}
 The system is not linear, let 
 $x_1[n]$ corresponds to the output $y_1$, and $x_2[n]$ corresponds to the output $y_2$, then we have that, 
-the output $y'[n]$ corresponding to the input $x_1[n]+x_2[n]$ is
-$$y'[n]=\ln(|x_1[n-1]+x_2[n-1]|+1)$$
-which is not equal to $y_1[n]+y_2[n]$\\\\
+the output $y'[n]$ corresponding to the input $\alpha x_1[n]+\beta x_2[n]$ is
+$$y'[n]=\ln(|\alpha x_1[n-1]+\beta x_2[n-1]|+1)$$
+which is not equal to $\alpha y_1[n]+\beta y_2[n]$\\\\
 The system is time invariant, let $x[n-k]$ corresponds to the output $y_3[n]$, then we have that
 $$y_3[n]=\ln(|x[n-k-1]|+1)=y[n-k]$$
 The system is casual since it only depends on the input values at index $n$.\\\\
@@ -96,11 +96,11 @@ also goes to $\ln(1)=0$.
 \subsection*{(b)}
 The system is linear, let 
 $x_1[n]$ corresponds to the output $y_1$, and $x_2[n]$ corresponds to the output $y_2$, then we have that, 
-the output $y'[n]$ corresponding to the input $x_1[n]+x_2[n]$ is
+the output $y'[n]$ corresponding to the input $\alpha x_1[n]+\beta x_2[n]$ is
 $$y'[n]=y'[n-1]+x[n]$$
-$$y'[n]=y'[-1]+\sum_{n=0}^{n}x_1[n]+x_2[n]$$
-$$y'[n]=\sum_{k=0}^{n}x_1[k]+\sum_{k=0}^{n}x_1[k]$$
-which is equal to $y_1[n]+y_2[n]$\\\\
+$$y'[n]=y'[-1]+\sum_{n=0}^{n}\alpha x_1[n]+\beta x_2[n]$$
+$$y'[n]=\alpha\sum_{k=0}^{n}x_1[k]+\beta\sum_{k=0}^{n}x_1[k]$$
+which is equal to $\alpha y_1[n]+\beta y_2[n]$\\\\
 The system is time variant, let $x[n-k]$ corresponds to the output $y_3[n]$, then we have that
 \begin{align*}
     y_3[n]&=y_3[n-1]+x[n-k]\\
@@ -122,11 +122,11 @@ the output will not go to $0$ as the input goes to $0$ as $n\to\infty$.
 \subsection*{(c)}
 The system is non linear, let 
 $x_1[n]$ corresponds to the output $y_1$, and $x_2[n]$ corresponds to the output $y_2$, then we have that, 
-the output $y'[n]$ corresponding to the input $x_1[n]+x_2[n]$ is
+the output $y'[n]$ corresponding to the input $\alpha x_1[n]+\beta x_2[n]$ is
 $$y'[n]=y'[n-1]+x[n]$$
-$$y'[n]=y'[-1]+\sum_{n=0}^{n}x_1[n]+x_2[n]$$
-$$y'[n]=1+\sum_{k=0}^{n}x_1[k]+\sum_{k=0}^{n}x_1[k]$$
-which is not equal to $y_1[n]+y_2[n]=2+\sum_{k=0}^{n}x_1[k]+\sum_{k=0}^{n}x_1[k]$\\\\
+$$y'[n]=y'[-1]+\sum_{n=0}^{n}\alpha x_1[n]+\beta x_2[n]$$
+$$y'[n]=1+\alpha\sum_{k=0}^{n}x_1[k]+\beta\sum_{k=0}^{n}x_1[k]$$
+which is not equal to $y_1[n]+y_2[n]=(\alpha+\beta)+\alpha\sum_{k=0}^{n}x_1[k]+\beta\sum_{k=0}^{n}x_1[k]$\\\\
 The system is time variant, let $x[n-k]$ corresponds to the output $y_3[n]$, then we have that
 \begin{align*}
     y_3[n]&=y_3[n-1]+x[n-k]\\
@@ -148,9 +148,9 @@ the output will not go to $0$ as the input goes to $0$ as $n\to\infty$.
 \subsection*{(d)}
 The system is non linear, let 
 $x_1[n]$ corresponds to the output $y_1$, and $x_2[n]$ corresponds to the output $y_2$, then we have that, 
-the output $y'[n]$ corresponding to the input $x_1[n]+x_2[n]$ is
-$$y'[n]=2+x_1[n]+x_2[n]$$
-which is not equal to $y_1[n]+y_2[n]=4+x_1[n]+x_2[n]$\\\\
+the output $y'[n]$ corresponding to the input $\alpha x_1[n]+\beta x_2[n]$ is
+$$y'[n]=2+\alpha x_1[n]+\beta x_2[n]$$
+which is not equal to $\alpha y_1[n]+\beta y_2[n]=2(\alpha+\beta)+\alpha x_1[n]+\beta x_2[n]$\\\\
 
 The system is time invariant, let $x[n-k]$ corresponds to the output $y_3[n]$, then we have that
 \begin{align*}
@@ -163,4 +163,19 @@ $$|y[n]|=|2+x[n]|\leq 2+B < \infty$$
 The system is relaxed since given an input that goes to $0$ as $n\to\infty$, the output
 also goes to $0$ since it only depends on the input at index $n$.
 \section*{Problem 5}
+\subsection*{(a)}
+
+This system is stable if $h[n]$ is BIBO stable if it was bounded.
+So if $|a|<1$ then the output is bounded, so
+the condition for stability is that $\boxed{|a|\geq1}$.\\\\
+\subsection*{(b)}
+
+This system is stable if $h[n]$ is BIBO stable if it was bounded. Therefore this system is stable for $\boxed{-\infty<a<\infty}$.
+\subsection*{(c)}
+The system is stable if either the geometric series converges, so $\boxed{|r|<1}$ is $\boxed{\omega_0\neq0}$, or 
+if $\sin[n\omega_0]=0$ for all $n$, so if $\boxed{\omega_0=0}$
+\subsection*{(d)}
+The system will be stable if $\boxed{|a|<1}$
+\subsection*{(e)}
+The system is stable if $-\infty<K<\infty$.
 \end{document}
