@@ -42,5 +42,51 @@ $$y[n]=\boxed{\begin{cases}
 2^{n+2}\frac{1}{3} & n<0\\
 2^{-n+2}\frac{1}{3} & n\geq 0
 \end{cases}}$$
+\section*{Problem 4}
+\subsection*{(a)}
+$$x[n]*y[n]=\boxed{\{3,5,6,7,7,8,9,9,7,4,2,1\},-3\leq n \leq 8}$$
+\subsection*{(b)}
+Then the response $y_2[n]$ would be 
+\begin{align*}
+y_2[n]=&h_1[n]*\left(\left(\frac{1}{3}\right)^nu[n]\right)\\
+=&\frac{1}{2^{n+1}}x[n+2]u[n]*\left(\left(\frac{1}{3}\right)^nu[n]\right)-\frac{3}{2}
+\delta[n]u[n]*\left(\left(\frac{1}{3}\right)^nu[n]\right)\\
+&+\frac{1}{2^n}u[n-3]u[n]*\left(\left(\frac{1}{3}\right)^nu[n]\right)\\
+\end{align*}
+We have that $x[n+2]*\left(\left(\frac{1}{3}\right)^nu[n]\right)=0$ 
+if $n<0$ and for $n\geq 0$ we have:
+\begin{align*}
+    \frac{1}{2^(n+1)}x[n+2]u[n]*\left(\left(\frac{1}{3}\right)^nu[n]\right)&=\sum_{k=-\infty}^{\infty}\frac{1}{2^{(k+1)}}x[k+2]u[k]\left(\left(\frac{1}{3}\right)^{n-k}u[n-k]\right)\\
+    &=\left(\frac{1}{3}\right)^n\sum_{k=0}^{n}2^{-k-1} 3^{k}x[k+2]
+\end{align*}
+Likewise we have that $\delta[n]*\left(\left(\frac{1}{3}\right)^nu[n]\right)=\left(\frac{1}{3}\right)^nu[n]$, and 
+for $ \left(2^{-n}u[n-3]\right)*\left(3^{-n}u[n]\right)$ we get that for $n<3$ the sequence is $0$ and otherwise we have
+\begin{align*}
+    \left(2^{-n}u[n-3]\right)*\left(3^{-n}u[n]\right)&=\sum_{k=-\infty}^{\infty}2^{-k}u[k-3]3^{-k+n}u[n-k]\\
+    &=\sum_{k=3}^{n}2^{-k}3^{k-n}\\
+    &=3^{-n}\sum_{k=3}^{n}\left(\frac{3}{2}\right)^{k}\\
+    &=3^{-n}2\left(\left(\frac{3}{2}\right)^n-\left(\frac{3}{2}\right)^2\right)
+\end{align*}
+Therefore we have that 
+$$y_2[n]=\boxed{\begin{cases}
+    0 & n<0\\
+    -\frac{3}{2}\left(\frac{1}{3}\right)^n+3^{-n}\sum_{k=0}^{n}2^{-k-1} 3^{k}x[k+2] & 0\leq n<3\\
+    -\frac{3}{2}\left(\frac{1}{3}\right)^n+3^{-n}2\left(\left(\frac{3}{2}\right)^n-\left(\frac{3}{2}\right)^2\right)+3^{-n}\sum_{k=0}^{4}2^{-k-1} 3^{k}x[k+2] & n\geq 3
+\end{cases}}$$
+\section*{Problem 5}
+\subsection*{(a)}
+The first index is the index $n$ that satisfies the condition 
+$n-n_1-n_3=0$, thus we get that the first nonzero element occurs at $\boxed{n_1+n_3}$
+\subsection*{(b)}
+The last index is the index $n$ that satisfies the condition
+$n-(n_2-1)-(n_4-1)=0$, thus we get that the last nonzero element occurs at $\boxed{n_2+n_4-2}$
+\subsection*{(c)}
+Therefore the length of the output sequence is 
+$n_2+n_4-2-(n_1+n_3)=\boxed{n_x+n_h-2}$
+\subsection*{(c)}
+
+
+
+
 
 \end{document}
