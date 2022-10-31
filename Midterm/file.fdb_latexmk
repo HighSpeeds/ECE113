@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1667116176 "c:/Users/Lawrence/Desktop/UCLA/ECE113/Midterm/file.tex" "file.pdf" "file" 1667116177
-  "c:/Users/Lawrence/Desktop/UCLA/ECE113/Midterm/file.tex" 1667116175 4503 5621741ba4a4b535e10c0f84d65337c8 ""
+["pdflatex"] 1667196961 "c:/Users/Lawrence/Desktop/UCLA/ECE113/Midterm/file.tex" "file.pdf" "file" 1667196963
+  "c:/Users/Lawrence/Desktop/UCLA/ECE113/Midterm/file.tex" 1667196960 5201 552b8a6b38e0c707b45c9cb85f413ead ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1664170015 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1664168346 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1664168346 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -62,14 +62,15 @@
   "c:/texlive/2022/texmf-dist/tex/latex/pdfpages/pdfpages.sty" 1664171932 54640 824e6029b804a13a512ccf1f10e75da0 ""
   "c:/texlive/2022/texmf-dist/tex/latex/pdfpages/pppdftex.def" 1664171932 6591 2b7dafd86674292db66a862dead10737 ""
   "c:/texlive/2022/texmf-dist/tex/latex/tools/calc.sty" 1664173275 10214 de3e21cfc0eccc98ca7f8dac0ef263d2 ""
+  "c:/texlive/2022/texmf-dist/tex/latex/wrapfig/wrapfig.sty" 1664173632 26220 3701aebf80ccdef248c0c20dd062fea9 ""
   "c:/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty" 1664173649 56148 51a9a8571c07b9921892ae11063ae853 ""
   "c:/texlive/2022/texmf-dist/web2c/texmf.cnf" 1664168209 40171 cdab547de63d26590bebb3baff566530 ""
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1664173825 4635069 7677ee69604aae14ed48b153c111a7f7 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1664173939 3058684 372e0c0dae1f62bf1e7332b92ec9e6a1 ""
   "c:/texlive/2022/texmf.cnf" 1664173806 713 e69b156964470283e0530f5060668171 ""
   "convolution.png" 1667114895 320089 75ed9b940f43b5b480c8d1ac0c9d50e4 ""
-  "file.aux" 1667116177 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "file.tex" 1667116175 4503 5621741ba4a4b535e10c0f84d65337c8 ""
+  "file.aux" 1667196963 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "file.tex" 1667196960 5201 552b8a6b38e0c707b45c9cb85f413ead ""
   (generated)
   "file.aux"
   "file.log"

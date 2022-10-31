@@ -1,4 +1,4 @@
-\documentclass[10pt]{article}
+\documentclass[9pt]{article}
 \author{Lawrence Liu}
 \usepackage{subcaption}
 \usepackage{graphicx}
@@ -17,9 +17,9 @@
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour}}
 \lstset{style=mystyle}
-
+\usepackage{wrapfig}
 \usepackage{geometry}
-\geometry{a4paper,margin=0.25in}
+\geometry{a4paper,margin=0.075in}
 \begin{document}
 \underline{\textbf{Signals}}\\
 A discrete time signal can be described as a mathematical function $x[n]$ where $n$ is the index of the sample.
@@ -48,17 +48,24 @@ A system is \textbf{linear} if given the outputs $y_1[n]$, and $y_2[n]$ of two i
 then the output of the input $x_3=\alpha x_1[n]+\beta x_2[n]$ the output is $y_3[n]=\alpha y_1[n]+\beta y_2[n]$. 
 A system is \textbf{time invariant} if given the output $y[n]$ of an input $x[n]$, then the output of the input $x[n-k]$ is $y[n-k]$. A system is \textbf{causal} if the output of an input $x[n]$ is only dependent on the input $x[n]$ and not $x[n-k]$ for $k<0$. 
 A system is \textbf{stable} if the output of an input $x[n]<\alpha<\infty$ for all $n$, the output $y[n]<\beta<\infty$ for all $n$. A
-system is \textbf{relaxed} if the output for an input $x[n]\to0$ for $n\to\infty$, then $y[n]\to0$ for $n\to\infty$.\\
+system is \textbf{relaxed} if $y[n]\to0$ for $n\to\infty$ and $0$ when the input is $0$. In general
+for a system that is lti, given its impulse response $h[n]$ (the system response to $\delta[n]$), the output of an input $x[n]$ is given by $y[n]=x[n]*h[n]$
+and the system will be stable if and only if $\sum_{k=-\infty}^{\infty}|h[k]|<\infty$.\\
 \underline{\textbf{Convolution}}\\
 We define the convolution of two signals $x[n]$ and $h[n]$ as $\boxed{y[n]=x[n]*h[n]=\sum_{k=-\infty}^{\infty}x[k]h[n-k]}$. A shortcut on how to do 
 convolution is shown below:\\
-\includegraphics[width=0.5\textwidth]{convolution.png}\\
+\begin{wrapfigure}{r}{0.5\textwidth}
+\includegraphics[width=0.5\textwidth]{convolution.png}
+\end{wrapfigure}
 We have that if given two signals $x_1[n]$ and $x_2[n]$ that start at $n_1$ and $n_2$ respectively and have lengths of 
 $L_1$ and $L_2$ respectively, then the convolution of the two signals will have nonzeros values for $n_1+n_2\leq n\leq n_1+n_2+L_1+L_2$, and thus
-the convolution will have $L_1+L_2+1$ nonzero values. \\
+the convolution will have $L_1+L_2+1$ nonzero values. $u[n]*u[n]=r[n+1]$ where $r[n]=nu[n]$ is the unit ramp signal.\\
 \underline{\textbf{Discrete Time Fourier Transform}}\\
 If a signal is periodic with period $N$, then we have that we can represnt it as a discrete fourier series, $\boxed{x[n]=\frac{1}{N}\sum_{k=0}^{N-1}c_ke^{j\frac{2\pi}{N}kn}}$. Where
-$c_k$ is derived from $\boxed{c_k=\sum_{n=0}^{N-1}x[n]e^{-j\frac{2\pi}{N}kn}}$.
-
+$c_k$ is derived from $\boxed{c_k=\sum_{n=0}^{N-1}x[n]e^{-j\frac{2\pi}{N}kn}}$.\\
+\underline{\textbf{Aditional Notes}}\\
+\textbf{conjugate symmetric}: $x^*[n]=x[-n]$ \textbf{conjugate anti-symmetric:} $x^*[n]=-x[-n]$. $\boxed{\sum_{k=1}^n ar^{k-1}=\begin{cases}
+\frac{a(1-r^n)}{1-r} & r\neq 1\\
+an & r=1\end{cases}}$. The sum of an arithmetic sequence consisting of $n$ values is $\boxed{\frac{n(a_1+a_n)}{2}}$
 
 \end{document}
