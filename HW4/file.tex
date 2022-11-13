@@ -35,5 +35,30 @@ We have that
 $$\sin(\Omega_0n)=\frac{1}{2j}\left(e^{j\Omega_0n}-e^{-j\Omega_0n}\right)$$
 And so we have that 
 $$X(\Omega)=\frac{\pi}{j}\left(\delta(\Omega-\Omega_0)-\delta(\Omega+\Omega_0)\right)$$
-
+\subsection*{(b)}
+We have that
+$$|X(\Omega)|=\pi\left(\delta(\Omega-\Omega_0)+\delta(\Omega+\Omega_0)\right)$$
+and 
+$$\angle X(\Omega)=\frac{\pi}{2}\left(\delta(\Omega-\Omega_0)-\delta(\Omega+\Omega_0)\right)$$
+\section*{Problem 3}
+\subsection*{(a)}
+$$\tilde{x}[n]\bigotimes\tilde{x}[n]=[3, 3, 3, 4, 3]$$
+\subsection*{(b)}
+$$\tilde{x}[n]\bigotimes \tilde{y}[n]=[0, 0, 0, 0, 0, 0]$$
+\section*{Problem 4}
+We have that 
+\begin{align*}
+    x[n]\cos(\Omega_0 n)&=\frac{x[n]}{2}\left(e^{j\Omega_0 n}+e^{-j\Omega_0 n}\right)\\
+    &\to \frac{1}{2}\left(X(\Omega-\Omega_0)+X(\Omega+\Omega_0)\right)
+\end{align*}
+\section*{Problem 5}
+We have that taking the fourier transform of the diffrence equation
+$$Y(\omega)(1+\frac{4}{9}e^{-j\omega}+\frac{1}{27}e^{-2j\omega})=X(\omega)(1-\frac{8}{9}e^{-j\omega}+\frac{1}{3}e^{-2j\omega})$$
+Since $x[n]$ is the delta function we have that 
+$X(\omega)=1$ and thus we have
+\begin{align*}
+    Y(\omega)&=\frac{3(9-8e^{-j\omega}-3e^{-2j\omega})}{(3+e^{-j\omega})(9+e^{-j\omega})}\\
+    &=3\left(\frac{1}{3+e^{-j\omega}}-\frac{3e^{-j\omega}}{9+e^{-j\omega}}\right)\\
+    &\to \boxed{(-3)^{n}u[n]-(-9)^{n-1}u[n-1]}
+\end{align*}
 \end{document}
