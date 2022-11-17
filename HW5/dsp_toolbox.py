@@ -111,10 +111,14 @@ def plot_dft_magnitude_angle(frequency_axis : np.array, f_signal : np.array, fs 
         ax2.set_ylim((-np.pi, np.pi))
 
     if(format == "Centered_Normalized"):
-        frequency_axis=frequency_axis-frequency_axis.min()
-        frequency_axis=frequency_axis/frequency_axis.max()
+        # print(frequency_axis)
+        # frequency_axis=frequency_axis-frequency_axis.min()
+        # frequency_axis=frequency_axis/frequency_axis.max()
         indexs=np.arange(-N//2,N//2)
-        frequency_axis[indexs[indexs<0]]-=1
+        frequency_axis[indexs[indexs<0]]-=frequency_axis.shape[0]
+        #normaliz to [-0.5,0.5]
+        frequency_axis=frequency_axis-frequency_axis.min()
+        frequency_axis=frequency_axis/frequency_axis.max()-0.5
         ax1.set_ylabel("Magnitude")
         magnitude=np.abs(f_signal)
         ax1.stem(frequency_axis[indexs], np.abs(f_signal)[indexs])
@@ -127,10 +131,11 @@ def plot_dft_magnitude_angle(frequency_axis : np.array, f_signal : np.array, fs 
         ax2.set_ylim((-np.pi, np.pi))
 
     if(format == "Centered_Original_Scale"):
-        frequency_axis=frequency_axis-frequency_axis.min()
-        frequency_axis=frequency_axis/frequency_axis.max()*fs
         indexs=np.arange(-N//2,N//2)
-        frequency_axis[indexs[indexs<0]]-=fs
+        frequency_axis[indexs[indexs<0]]-=frequency_axis.shape[0]
+        frequency_axis=frequency_axis-frequency_axis.min()
+        frequency_axis=frequency_axis/frequency_axis.max()-0.5
+        frequency_axis=frequency_axis*fs
         ax1.set_ylabel("Magnitude")
         magnitude=np.abs(f_signal)
         ax1.stem(frequency_axis[indexs], np.abs(f_signal)[indexs])
