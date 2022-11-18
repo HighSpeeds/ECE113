@@ -37,7 +37,8 @@ def create_dft_matrix(length : int) -> np.array:
     for i in range(length):
         for j in range(length):
             dft_mat[i,j] = np.exp(-2j*np.pi*i*j/length)
-    dft_mat*=1/np.sqrt(length)
+    # dft_mat*=1/np.sqrt(length)
+    # print(dft_mat)
     #***************************** Please add your code implementation above this line *****************************
 
     return dft_mat
