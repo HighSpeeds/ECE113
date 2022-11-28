@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1669626498 "/home/lawrence/Desktop/UCLA/ECE113/HW6/file.tex" "file.pdf" "file" 1669626498
+["pdflatex"] 1669659486 "/home/lawrence/Desktop/UCLA/ECE113/HW6/file.tex" "file.pdf" "file" 1669659486
   "../preamble.tex" 1664198913 440 34840f412b4acb25e102633b63b5eaf2 ""
-  "/home/lawrence/Desktop/UCLA/ECE113/HW6/file.tex" 1669626495 1862 2b2419e703872b78a4705288eb66d4aa ""
+  "/home/lawrence/Desktop/UCLA/ECE113/HW6/file.tex" 1669659485 2884 0ea6046201ed35551c3164ef5b2485f8 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1650183167 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1650183167 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1650183167 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -24,9 +24,11 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1650183167 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1650183167 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1650183167 36741 fa121aac0049305630cf160b86157ee4 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1650183167 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1650183167 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1650183167 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1650183167 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1650183167 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1650183167 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1650183167 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1650183167 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
@@ -70,8 +72,8 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1650183167 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1667843082 4278762 af3ac1370db81a450c1118eabf1fe718 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1667843073 2927660 93a61f5ad9033d43a5151947b7738394 ""
-  "file.aux" 1669626498 32 ab05033ccbb38b00a31b200ccedf8001 "pdflatex"
-  "file.tex" 1669626495 1862 2b2419e703872b78a4705288eb66d4aa ""
+  "file.aux" 1669659486 32 c81c40425fbb5e93b90fba65da0b5e61 "pdflatex"
+  "file.tex" 1669659485 2884 0ea6046201ed35551c3164ef5b2485f8 ""
   (generated)
   "file.aux"
   "file.log"

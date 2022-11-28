@@ -42,7 +42,31 @@ therefore we would only need $4000\cdot 8=32000$ bytes to represent
 the signal in discrete time.
 \section*{Problem 3}
 \subsection*{(a)}
-
+We need to multiply every term by every term in the polynomial and summing 
+so it will take $O(n^2)$ time.
+\subsection*{(b)}
+We have that the coefficeint of $x^k$, $c_k$ is 
+$$c_k=\sum_{i=0}^{i=k}a_ib_{k-i}$$
+Where $a_i$ and $b_i$ are the coefficeints of the polynomials $a$ and $b$ for 
+$x^i$. So we can see that $c_k$ is the circular convolution of $a$ and $b$.
+\subsection*{(c)}
+Therefore we can do it with FFT by first taking the FFT
+of the signals made up of the coefficents of the two polynomials, 
+then multiplying the two FFTs, and then taking the inverse FFT of the
+result. This will take $O(n\log n)$ time.
+\section*{Problem 4}
+\subsection*{(a)}
+We have that 
+\subsection*{(b)}
+$$[0,0,1,0]\to[1,j,-1,-j]$$
+Applying property that convolution in frequency domain is multiplication in time domain, we get that
+$$[0,1,0,0]\circ x[n]\to [0,1-j,-1,1-j]$$
+\subsection*{(c)}
+$$[0,0,1,0]\to[1,-j,-1,j]$$
+\subsection*{(d)}
+Applying the time shift property we get
+$$x[n-1]\to e^{-j\frac{\pi}{2}}DFT(x[n])=[0,-j-1,-1,j-1]$$
 \section*{Problem 5}
+
 
 \end{document}
