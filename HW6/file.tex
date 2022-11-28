@@ -1,0 +1,48 @@
+\include{"../preamble.tex"}
+\title{ECE 113 HW 6}
+\begin{document}
+\maketitle
+\section*{Problem 1}
+\subsection*{(a)}
+We have $10000\cdot 5$ samples for our 
+time domain signal, each of these will be $4$ bytes, 
+so in total we would have that we would need 200kB to 
+naively represent the signal. For our 
+DFT signal we would have $10000 \cdot 5$ samples, each of
+which would take $8$ bytes to represent, so in total 
+we would need 400kB to represent the signal.
+\subsection*{(b)}
+Since it is a real value signal we would have that 
+$$X_k=X_{N-k}^*$$
+Thus we can only send half of the DFT signal,
+which would be $10000 \cdot 5/2+1$ samples, each of which
+would take $8$ bytes to represent, so in total we would
+need 200kB to represent the signal.
+\subsection*{(c)}
+Then we would have that we would only 
+need to send the values of 
+$X_k$ between $k=2000$ and $k=4000$, which would be
+$2001$ samples, each of which would take $8$ bytes to
+represent, so in total we would need 16008 bytes to
+represent the signal.
+\section*{Problem 2}
+\subsection*{(a)}
+From nyquist we would need to sample at least $2\cdot 8000$ Hz, 
+so then we would need $2\cdot 8000\cdot 5=80000$ bytes to represent
+the signal in discrete time. Likewise we would need $80001$ bytes 
+to represent the signal in the frequency domain since the signal is discrete.
+\subsection*{(b)}
+We have that the sampled signal's frequency domain is 
+$$X_s=\sum_{k=-\infty}^{k=\infty}X(f-kf_s)$$
+Where $X(f)$ is the frequency domain of the original signal, then 
+since we have that $X(f)>0$ only for $f\in[4000,8000]$, 
+then we get that if we just apply a  bandpass filter, we 
+can sample at $4000$ Hz and still reconstruct the signal. so 
+therefore we would only need $4000\cdot 8=32000$ bytes to represent
+the signal in discrete time.
+\section*{Problem 3}
+\subsection*{(a)}
+
+\section*{Problem 5}
+
+\end{document}
