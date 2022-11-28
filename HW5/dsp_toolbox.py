@@ -37,7 +37,8 @@ def create_dft_matrix(length : int) -> np.array:
     for i in range(length):
         for j in range(length):
             dft_mat[i,j] = np.exp(-2j*np.pi*i*j/length)
-    dft_mat*=1/np.sqrt(length)
+    # dft_mat*=1/np.sqrt(length)
+    # print(dft_mat)
     #***************************** Please add your code implementation above this line *****************************
 
     return dft_mat
@@ -112,13 +113,13 @@ def plot_dft_magnitude_angle(frequency_axis : np.array, f_signal : np.array, fs 
 
     if(format == "Centered_Normalized"):
         # print(frequency_axis)
-        # frequency_axis=frequency_axis-frequency_axis.min()
-        # frequency_axis=frequency_axis/frequency_axis.max()
-        indexs=np.arange(-N//2,N//2)
-        frequency_axis[indexs[indexs<0]]-=frequency_axis.shape[0]
-        #normaliz to [-0.5,0.5]
         frequency_axis=frequency_axis-frequency_axis.min()
-        frequency_axis=frequency_axis/frequency_axis.max()-0.5
+        frequency_axis=frequency_axis/frequency_axis.max()
+        indexs=np.arange(-N//2,N//2)
+        frequency_axis[indexs[indexs<0]]-=1+frequency_axis[-1]-frequency_axis[-2]
+        # #normaliz to [-0.5,0.5]
+        # frequency_axis=frequency_axis-frequency_axis.min()
+        # frequency_axis=frequency_axis/frequency_axis.max()-0.5
         ax1.set_ylabel("Magnitude")
         magnitude=np.abs(f_signal)
         ax1.stem(frequency_axis[indexs], np.abs(f_signal)[indexs])
@@ -131,10 +132,10 @@ def plot_dft_magnitude_angle(frequency_axis : np.array, f_signal : np.array, fs 
         ax2.set_ylim((-np.pi, np.pi))
 
     if(format == "Centered_Original_Scale"):
-        indexs=np.arange(-N//2,N//2)
-        frequency_axis[indexs[indexs<0]]-=frequency_axis.shape[0]
         frequency_axis=frequency_axis-frequency_axis.min()
-        frequency_axis=frequency_axis/frequency_axis.max()-0.5
+        frequency_axis=frequency_axis/frequency_axis.max()
+        indexs=np.arange(-N//2,N//2)
+        frequency_axis[indexs[indexs<0]]-=1+frequency_axis[-1]-frequency_axis[-2]
         frequency_axis=frequency_axis*fs
         ax1.set_ylabel("Magnitude")
         magnitude=np.abs(f_signal)
@@ -164,7 +165,7 @@ def idft(signal : np.array) -> np.array:
     #***************************** Please add your code implementation under this line *****************************
     # Try to only use the <create_dft_matrix> and <apply_dft_matrix> operations that you have already implemented and some numpy operations.
     # Hint: look up the <np.conjugate>
-    time_domain_signal=apply_dft_matrix(create_dft_matrix(length_signal), np.conjugate(signal))#*np.conjugate(1/np.sqrt(length_signal))
+    time_domain_signal=apply_dft_matrix(np.conjugate(create_dft_matrix(length_signal)), signal)/length_signal
     #***************************** Please add your code implementation above this line *****************************
 
     return time_domain_signal
