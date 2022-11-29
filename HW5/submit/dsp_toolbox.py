@@ -165,7 +165,7 @@ def idft(signal : np.array) -> np.array:
     #***************************** Please add your code implementation under this line *****************************
     # Try to only use the <create_dft_matrix> and <apply_dft_matrix> operations that you have already implemented and some numpy operations.
     # Hint: look up the <np.conjugate>
-    time_domain_signal=apply_dft_matrix(create_dft_matrix(length_signal), np.conjugate(signal))#*np.conjugate(1/np.sqrt(length_signal))
+    time_domain_signal=apply_dft_matrix(np.conjugate(create_dft_matrix(length_signal)), signal)/length_signal
     #***************************** Please add your code implementation above this line *****************************
 
     return time_domain_signal

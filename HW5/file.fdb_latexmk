@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1668841965 "c:/Users/Lawrence/Desktop/UCLA/ECE113/HW5/file.tex" "file.pdf" "file" 1668841967
+["pdflatex"] 1668897461 "c:/Users/Lawrence/Desktop/UCLA/ECE113/HW5/file.tex" "file.pdf" "file" 1668897462
   "../preamble.tex" 1664863357 456 34840f412b4acb25e102633b63b5eaf2 ""
   "c:/Users/Lawrence/Desktop/UCLA/ECE113/HW5/file.tex" 1668802512 764 134645fb088a1d114667a53e372516ab ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1664170015 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -75,9 +75,9 @@
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1664173939 3058684 372e0c0dae1f62bf1e7332b92ec9e6a1 ""
   "c:/texlive/2022/texmf.cnf" 1664173806 713 e69b156964470283e0530f5060668171 ""
   "fig.png" 1668802350 17010 8d684325ecf7c80dd4d55cc05afee379 ""
-  "file.aux" 1668841966 33 ae0780c75316f63551f84ee9db44c555 "pdflatex"
+  "file.aux" 1668897462 33 ae0780c75316f63551f84ee9db44c555 "pdflatex"
   "file.tex" 1668802512 764 134645fb088a1d114667a53e372516ab ""
-  "hw5.pdf" 1668841942 782487 f18f2b631bad7abafdbe36bfc2a01296 ""
+  "hw5.pdf" 1668897425 787442 034b59f7ab41ce910a47f83dddb41144 ""
   (generated)
   "file.aux"
   "file.log"
