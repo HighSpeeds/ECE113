@@ -1,19 +1,15 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  28 NOV 2022 23:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  29 NOV 2022 11:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Lawrence/Desktop/UCLA/ECE113/HW6/file.tex
-(c:/Users/Lawrence/Desktop/UCLA/ECE113/HW6/file.tex
+**c:/Users/Lawrence/Desktop/UCLA/ECE113/Final/file.tex
+(c:/Users/Lawrence/Desktop/UCLA/ECE113/Final/file.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-08-30>
-
-LaTeX Warning: \include should only be used after \begin{document} on input line 1.
-
-(../preamble.tex (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2022-08-30> (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
-(c:/texlive/2022/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+(c:/texlive/2022/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -213,43 +209,109 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))) (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+)) (c:/texlive/2022/texmf-dist/tex/latex/mathtools/empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+ (c:/texlive/2022/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+) (c:/texlive/2022/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+\g_MT_multlinerow_int=\count289
+\l_MT_multwidth_dim=\dimen171
+\origjot=\skip55
+\l_MT_shortvdotswithinadjustabove_dim=\dimen172
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen173
+\l_MT_above_intertext_sep=\dimen174
+\l_MT_below_intertext_sep=\dimen175
+\l_MT_above_shortintertext_sep=\dimen176
+\l_MT_below_shortintertext_sep=\dimen177
+\xmathstrut@box=\box57
+\xmathstrut@dim=\dimen178
+)
+\l_EQ_equationtype_int=\count290
+\l_EQ_alignmentmode_int=\count291
+\l_EQ_totalwidth_dim=\dimen179
+\l_EQ_displaywidth_dim=\dimen180
+\l_EQ_temp_linewidth_dim=\dimen181
+\l_EQ_linewidth_dim=\dimen182
+\EmphEqdelimitershortfall=\dimen183
+\EmphEqdelimiterfactor=\count292
+\g_EQ_toptag_height_dim=\dimen184
+\g_EQ_bottomtag_depth_dim=\dimen185
+\g_EQ_toprow_height_dim=\dimen186
+\g_EQ_bottomrow_depth_dim=\dimen187
+\g_EQ_widesttag_dim=\dimen188
+\EQ_mathdisplay_box=\box58
+\EQ_tag_box=\box59
+\g_EQ_temprow_int=\count293
+) (c:/texlive/2022/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen189
+\WF@size=\dimen190
+\c@WF@wrappedlines=\count294
+\WF@box=\box60
+\WF@everypar=\toks25
+Package: wrapfig 2003/01/31  v 3.6
+) (c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (c:/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count295
+\Gm@cntv=\count296
+\c@Gm@tempcnt=\count297
+\Gm@bindingoffset=\dimen191
+\Gm@wd@mp=\dimen192
+\Gm@odd@mp=\dimen193
+\Gm@even@mp=\dimen194
+\Gm@layoutwidth=\dimen195
+\Gm@layoutheight=\dimen196
+\Gm@layouthoffset=\dimen197
+\Gm@layoutvoffset=\dimen198
+\Gm@dimlist=\toks26
+) (c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count289
-\l__pdf_internal_box=\box57
-) (./file.aux)
+\l__color_backend_stack_int=\count298
+\l__pdf_internal_box=\box61
+)
+
+LaTeX Warning: Unused global option(s):
+    [9pt].
+
+(./file.aux)
 \openout1 = `file.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count290
-\scratchdimen=\dimen171
-\scratchbox=\box58
-\nofMPsegments=\count291
-\nofMParguments=\count292
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count293
-\MPscratchDim=\dimen172
-\MPnumerator=\count294
-\makeMPintoPDFobject=\count295
-\everyMPtoPDFconversion=\toks26
+\scratchcounter=\count299
+\scratchdimen=\dimen199
+\scratchbox=\box62
+\nofMPsegments=\count300
+\nofMParguments=\count301
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count302
+\MPscratchDim=\dimen256
+\MPnumerator=\count303
+\makeMPintoPDFobject=\count304
+\everyMPtoPDFconversion=\toks28
 ) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -257,42 +319,107 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) (c:/texlive/2022/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
- (c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2022/02/03 v1.0f TeX engine tests
-) (c:/texlive/2022/texmf-dist/tex/latex/graphics/lscape.sty
+ (c:/texlive/2022/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count296
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+\c@lstlisting=\count305
+\Hy@linkcounter=\count306
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(5.42003pt, 586.66782pt, 5.42003pt)
+* v-part:(T,H,B)=(5.42003pt, 834.20679pt, 5.42003pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=586.66782pt
+* \textheight=834.20679pt
+* \oddsidemargin=-66.84996pt
+* \evensidemargin=-66.84996pt
+* \topmargin=-103.84996pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<../Midterm/file.pdf, id=1, 597.50829pt x 845.0471pt>
+File: ../Midterm/file.pdf Graphic file (type pdf)
+<use ../Midterm/file.pdf>
+Package pdftex.def Info: ../Midterm/file.pdf  used on input line 24.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: ../Midterm/file.pdf Graphic file (type pdf)
+<use ../Midterm/file.pdf>
+Package pdftex.def Info: ../Midterm/file.pdf  used on input line 24.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<../Midterm/file.pdf, id=4, page=1, 597.50829pt x 845.0471pt>
+File: ../Midterm/file.pdf Graphic file (type pdf)
+<use ../Midterm/file.pdf, page 1>
+Package pdftex.def Info: ../Midterm/file.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: ../Midterm/file.pdf Graphic file (type pdf)
+<use ../Midterm/file.pdf, page 1>
+Package pdftex.def Info: ../Midterm/file.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: ../Midterm/file.pdf Graphic file (type pdf)
+<use ../Midterm/file.pdf, page 1>
+Package pdftex.def Info: ../Midterm/file.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: ../Midterm/file.pdf Graphic file (type pdf)
+<use ../Midterm/file.pdf, page 1>
+Package pdftex.def Info: ../Midterm/file.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+File: ../Midterm/file.pdf Graphic file (type pdf)
+<use ../Midterm/file.pdf, page 1>
+Package pdftex.def Info: ../Midterm/file.pdf , page1 used on input line 24.
+(pdftex.def)             Requested size: 597.53416pt x 845.08372pt.
+[1
+
+ <../Midterm/file.pdf{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (4.79143pt too wide) in paragraph at lines 44--46
-\OT1/cmr/m/n/12 We have that given two poly-no-mi-als $\OML/cmm/m/it/12 a\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = [][] \OML/cmm/m/it/12 a[]x[]$ \OT1/cmr/m/n/12 and $\OML/cmm/m/it/12 b\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = [][] \OML/cmm/m/it/12 b[]x[]$\OT1/cmr/m/n/12 ,
+)
+Overfull \hbox (26.61815pt too wide) in paragraph at lines 25--67
+\OT1/cmr/m/n/10 The naive im-ple-men-ta-tion of the DFT is $\OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 N[]\OT1/cmr/m/n/10 )$, how-ever we can use the prop-erty that we can rewrite the DFT as $\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 x[]e[] \OT1/cmr/m/n/10 +
  []
 
-[2] [3] [4] [5] (./file.aux) ) 
+[2] (./file.aux) ) 
 Here is how much of TeX's memory you used:
- 6789 strings out of 475075
- 107095 string characters out of 5783001
- 443301 words of memory out of 5000000
- 28127 multiletter control sequences out of 15000+600000
- 477715 words of font info for 61 fonts, out of 8000000 for 9000
+ 8148 strings out of 475075
+ 131576 string characters out of 5783001
+ 492284 words of memory out of 5000000
+ 29476 multiletter control sequences out of 15000+600000
+ 471266 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,6n,82p,370b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on file.pdf (5 pages, 119951 bytes).
+ 67i,17n,77p,344b,421s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on file.pdf (2 pages, 335654 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 119 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -38,12 +38,13 @@ $4000$ Hz, so then we would could sample at $8000$ Hz and still reconstruct the 
 \section*{Problem 3}
 \subsection*{(a)}
 We need to multiply every term by every term in the polynomial and summing 
-so it will take $O(n^2)$ time.
+so for two polynomials of degree $n$ and $m$, it will take 
+$O(nm)$ operations to multiply them.
 \subsection*{(b)}
 We have that given two polynomials $a(x)=\sum_{k=0}^{n-1}a_kx^k$ and
-$b(x)=\sum_{k=0}^{n-1}b_kx^k$, then we have that
-$$y(x)=a(x)b(x)=\sum_{i=1}^{n-1}\sum_{j=1}^{n-1}a_ix^ib_jx^j$$
-$$y(x)=a(x)b(x)=\sum_{k=1}^{2n-1}\sum_{j=1}^{n-1}a_{k-j}b_jx^k$$
+$b(x)=\sum_{k=0}^{m-1}b_kx^k$, then we have that
+$$y(x)=a(x)b(x)=\sum_{i=1}^{n-1}\sum_{j=1}^{m-1}a_ix^ib_jx^j$$
+$$y(x)=a(x)b(x)=\sum_{k=1}^{n+m-1}\sum_{j=1}^{n-1}a_{k-j}b_jx^k$$
 Thus we get that the the coefficents of $y$, $y[k]$ is 
 $$y[k]=a'\bigotimes b'$$
 Where $a'$ and $b'$ are the coefficents of $a$ and $b$ respectively
