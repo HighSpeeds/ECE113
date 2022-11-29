@@ -32,12 +32,9 @@ so then we would need $2\cdot 8000\cdot 5=80000$ bytes to represent
 the signal in discrete time. Likewise we would need $80001$ bytes 
 to represent the signal in the frequency domain since the signal is discrete.
 \subsection*{(b)}
-We have that the sampled signal's frequency domain is 
-$$X_s=\sum_{k=-\infty}^{k=\infty}X(f-kf_s)$$
-Where $X(f)$ is the frequency domain of the original signal, then 
-since we have that $X(f)>0$ only for $f\in[4000,8000]$, 
-then we get that if we just apply a  bandpass filter, we 
-can sample at $4000$ Hz and still reconstruct the signal.
+We only need to 
+sample at 2 times the bandwith which in this case is 
+$4000$ Hz, so then we would could sample at $8000$ Hz and still reconstruct the signal.
 \section*{Problem 3}
 \subsection*{(a)}
 We need to multiply every term by every term in the polynomial and summing 
