@@ -53,6 +53,16 @@ is symetric, therefore the inverse fourier transform is just
 $\boxed{x_n=\frac{1}{N}W^H X_k}$
 where $W^H$ is the conjugate transpose of $W$, or since 
 $W$ is symetric, $W^H=W^*$, where $W^*$ is the conjugate of $W$.\\
+\underline{\textbf{Properties of the DFT}}\\
+\textbf{DFT of Sin}, $x[n]=\sin(\frac{2\pi}{Nl}n)$, we have that
+since $x[n]=\frac{1}{2j}\left(e^{j\frac{2\pi}{Nl}n}-e^{-j\frac{2\pi}{Nl}n}\right)$, we have that
+$X[k]=\frac{N}{2j}\left(\delta(k-l)-\delta(k-N+l)\right)$\\
+\textbf{DFT of Cos}, $x[n]=\cos(\frac{2\pi}{Nl}n)$, we have that
+since $x[n]=\frac{1}{2}\left(e^{j\frac{2\pi}{Nl}n}+e^{-j\frac{2\pi}{Nl}n}\right)$, we have that
+$X[k]=\frac{N}{2}\left(\delta(k-l)+\delta(k-N+l)\right)$\\
+\textbf{DFT of a multiplication of two signals}, Given that 
+the DFT of $x[n]$ and $y[n]$ are $X[k]$ and $Y[k]$ respectively, we have that
+$x[n]y[n]\to \frac{1}{N} X[k]\bigotimes Y[k]$.\\
 \underline{\textbf{FFT}}\\
 The naive implementation of the DFT is $O(N^2)$, however we can use the
 property that we can rewrite the DFT as 
@@ -63,8 +73,26 @@ repeating this we get that we can optimize the FFT's complexity to
 $O(NlogN)$, where $N$ is the length of the signal.\\
 \underline{\textbf{Z transform}}\\
 The z transform of a signal is given by $X(z)=\sum_{n=-\infty}^{\infty}x[n]z^{-n}$. We define the 
-reigon of convergence as the set of $z$ such that this sum exists. 
-
+reigon of convergence as the set of $z$ such that this sum exists. \\
+\underline{\textbf{Sampling}}\\
+We can obtain a discrete time signal from a continuous time signal by sampling it at a rate of $f_s$.
+we get that the discrete time signal is $x[n]=x(nT_s)$, where $T_s=\frac{1}{f_s}$ is the sampling period.\\
+We have that the Fourier transform of the sampled signal is 
+$X_{s}(\Omega)=\frac{1}{T}\sum_{k=-\infty}^{+\infty}X(j\Omega-kj\Omega_s)$
+where $\Omega_s=\frac{2\pi}{T_s}$ is the sampling frequency.\\
+Therefore for the general case where we have that 
+$X(j\Omega)=0$ for $|\Omega|>\Omega_N$, we have that
+if $\Omega_s>2\Omega_N$ then we 
+can recover the signal from the samples, this is know as the Nyquist sampling rate. \\
+\underline{\textbf{Usefull Summations}}\\
+$$\sum_{n=0}^{\infty}ar^k=\frac{a}{1-ar} \text{ for }|r|<1$$
+$$\sum_{k=0}^{n-1}ar^{k}=\sum_{k=1}ar^{k-1}=\begin{cases}
+    a\left(\frac{1-r^n}{1-r}\right) & \text{if }r\neq 1\\
+    an & \text{if }r=1
+\end{cases}$$
+\textbf{Arithmetic Summation}
+Given that $a_1,a_2,\cdots,a_n$ are a sequence of numbers, we have that
+$$\sum_{k=1}^n a_k=\frac{n(a_1+a_n)}{2}$$
 
 \end{document}
 

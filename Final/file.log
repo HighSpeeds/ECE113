@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  29 NOV 2022 11:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.25)  29 NOV 2022 23:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -402,21 +402,26 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (26.61815pt too wide) in paragraph at lines 25--67
+Overfull \hbox (26.61815pt too wide) in paragraph at lines 25--88
 \OT1/cmr/m/n/10 The naive im-ple-men-ta-tion of the DFT is $\OML/cmm/m/it/10 O\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 N[]\OT1/cmr/m/n/10 )$, how-ever we can use the prop-erty that we can rewrite the DFT as $\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 x[]e[] \OT1/cmr/m/n/10 +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--88
+
  []
 
 [2] (./file.aux) ) 
 Here is how much of TeX's memory you used:
  8148 strings out of 475075
  131576 string characters out of 5783001
- 492284 words of memory out of 5000000
+ 502284 words of memory out of 5000000
  29476 multiletter control sequences out of 15000+600000
  471266 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,17n,77p,344b,421s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on file.pdf (2 pages, 335654 bytes).
+Output written on file.pdf (2 pages, 341063 bytes).
 PDF statistics:
  119 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
